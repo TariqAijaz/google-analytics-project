@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Analytics Project</title>
+  <link rel="stylesheet" href="/css/analytics.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+      <h1 id="heading">Welcome To Google Analytics</h1>
+      <h2 id="sub-heading">Please Authorize Yourself</h2>
+      <br>
+      <button id="auth-button" hidden>Authorize</button>
+      <br>
+      <h5 id="text">Enter Email Address & Account ID (from below) to give User Read-Only Access of following Google Analytics 
+          account</h5>
+      <input type="email" name="email" id="email" placeholder="Emai Address">
+      <input type="number" name="account-id" id="account-id" placeholder="Account ID">
+      <input type="button" name="insert-button" id="insert-button" value="Insert" onclick="insertUser()">
+      <br><br>
+      <h5 id="total-accounts"></h5>
+      <table class="table table-striped" id="accounts-table">
+          <tr>
+             <td><b>S.NO</b></td>
+             <td><b>ACCOUNT NAME</b></td>
+             <td><b>ACCOUNT ID</b></td>
+          </tr>
+      </table>
+  </div>
+
+  <script src="/js/analytics.js"> </script>
+  <script src="https://apis.google.com/js/client.js?onload=authorize"></script>
+
+</body>
+</html>
