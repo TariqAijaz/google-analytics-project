@@ -11,6 +11,5 @@ Following are the steps to run project locally on the computer.
   - Clone the repository locally on your computer.
   - Open analytics.js and replace Client ID with your OAuth Cliend ID.
   - Open cmd and go to your project drirectory.
-  - Run 'npm init' & 'npm install express --save'
   - Run 'node server.js' 
   - Open your browser and go to http://localhost:8080/
